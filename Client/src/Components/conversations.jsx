@@ -1,4 +1,4 @@
-import "../Styles/conversations.css"
+import "../Styles/Conversations.css"
 import foto from "../Images/image.png"
 import { BoxChat } from "./Box-Chat"
 
