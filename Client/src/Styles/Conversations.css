@@ -2,11 +2,21 @@
 
     height: 100vh;
     width: 100%;
-    border-right: 3px solid #fff;
-
+    /* border-right: 3px solid #fff; */
+    position: relative;
     display: grid;
     grid-template-rows: 15% 85%;
 
+}
+
+.Contenedor-Conversations::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100vh;
+    background: linear-gradient(#A81977, #5C271A, #E3D060);
 }
 
 .Historias{
@@ -18,7 +28,7 @@
 }
 
 .Borde-Historia{
-   border: 3px solid #fff;
+   background: linear-gradient(#A81977, #5C271A, #E3D060);
     height: 70px;
     width: 70px;
     border-radius: 100vmax;

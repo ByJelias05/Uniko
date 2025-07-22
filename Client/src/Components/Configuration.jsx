@@ -2,7 +2,7 @@ import "../Styles/Configuration.css"
 import foto from "../Images/image.png"
 
 export function Configuration(){
-    return(
+    return( 
         <div className="Contenedor-Configuration">
 
             <h1 className="">Perfil</h1>

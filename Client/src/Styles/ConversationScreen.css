@@ -10,7 +10,7 @@
 .Informacion-Conversacion{
     width: 100%;
     padding-inline: 50px;
-
+    background: #241A22;
     display: flex;
     align-items: center;
     gap: 25px;
@@ -101,3 +101,4 @@
    border: none;
    background: #3E0F02;
 }
+
