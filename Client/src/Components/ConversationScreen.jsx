@@ -20,7 +20,7 @@ export function ConversationScreen(){
             mensaje: enviar
         })
     }
-     
+    
     useEffect(() =>{
         const UnOnsnapshot = onSnapshot(
             collection(db, "Conversaciones"),
