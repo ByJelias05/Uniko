@@ -14,8 +14,13 @@ export function ConversationScreen(){
 
     const [Mensajes, setMensajes] = useState([]);
     const [enviar, setEnviar] = useState("")
-    
 
+    const Enviado = () =>{
+        axios.post("https://uniko-server.onrender.com/Enviar", {
+            mensaje: enviar
+        })
+    }
+    
     useEffect(() =>{
         const UnOnsnapshot = onSnapshot(
             collection(db, "Conversaciones"),
@@ -53,7 +58,7 @@ export function ConversationScreen(){
                         <button className="Btn-Agregar">+</button>
                         <button className="Btn-Emoji">😂</button>
                         <input onChange={(e) => {setEnviar(e.target.value)}} type="text" placeholder="Escribe un mensaje..."/>
-                        <button className="Btn-Enviar"></button>
+                        <button onClick={Enviado} className="Btn-Enviar"></button>
                     </div>
                 </div>
             </div>
